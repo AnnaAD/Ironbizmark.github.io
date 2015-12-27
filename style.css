@@ -2,41 +2,41 @@
   border-radius: 0;
 }
 
-code {
-  color: #DF3A01;
-}
-
-
-html {
-  position: relative;
-  min-height: 100%;
-}
 body {
+  background-color: #9F81F7;
   margin: 0;
   padding: 0;
-  /* Margin bottom by footer height */
-  margin-bottom: 50px ;
-  padding-top: 0px;
+  font-family: "Dosis"; 
+  background: url(http://i.imgur.com/UZKEjzG.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+#content {
+  background-color: white;
+  padding: 0px;
+  width: 83%;
+  min-height: 100vh;
+  margin: auto;
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 50px;
-  padding-top: 10px;
+}
+
+.content {  
+  padding: 10px;
+}
+
+#header {
+  background-color:lightgray;
+  margin: 0;
+  height: 150px;
   text-align: center;
+  padding-top: 45px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Dosis';
-}
-p, div {
-    font-family: 'Dosis';
+.justify {
+  text-align: justify;
 }
 
-.navbar-default {
-  background-color: red;
-}
+

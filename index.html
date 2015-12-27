@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Ironbizmark</title>
+  <title>CodeNapkin</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
@@ -11,71 +11,76 @@
   <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-  <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="../">Ironbizmark</a>
+  <div id = "content">
+    <div id = "header">
+      <h1> Ironbizmark</h1>
     </div>
-    <div>
-      <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Fall!</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid" id="custom-bootstrap-menu">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="/CodeNapkin/">Ironbizmark</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <li><a href="/CodeNapkin/games/">Games</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav pull-right">
+              <form class="navbar-form" role="search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class = "content">
+        <div class="row">
+          <div class="justify col-md-4">
+            <h3> Games </h3>
+            <p>I have made a lot of games in the past in many different languages. I think games are pretty fun. Check out some of my earliest games <a href = "http://scratch.mit.edu/users/Ironbizmark">here</a> and some of my later works on <a href = "http://bithexagon.com">bithexagon.com</a></p>
+          </div>
+          <div class="justify col-md-4">
+            <h3> About </h3>
+            <p>United States Citizen. 9th Grader. Programmer. Planeswalker. <strong>Proficient in: </strong> HTML, PHP, CSS, MySQL, Java, JavaScript, Scratch, English</p>
+          </div>
+          <div class="justify col-md-4">
+            <h3> Fun Stuff </h3>
+            <p>Well, I guess I want a small column just to talk a little. I like programming, but you know that. I also enjoy reading and writing, I have treid (and failed) on multiple occasions to write a novel. I really like cats and I want to get one as soon as possible. In my opinion Mustard Is Life. Well, maybe not really.</p>
+          </div>
+          <div class="clearfix visible-lg"></div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-12">
+            <h3> Why Ironbizmark.github.io?</h3>
+            <p><strong>Bootstrap and this Site</strong> Why did I make this site? Well, it is because of my other project CodeNapkin. That site sparked an intrest of mine in gitHub and caused me to make a site on this page. <code>System.out.println("Oh Well...");</code> It proabaly took way to long and I should be writing an english essay right now...</p>
+
+            <pre>
+              <code>
+//Java Code
+
+System.out.println("Happy now?");
+
+for(int i = 0; i < 100; i++) {
+System.out.println (i + " banana");
+}
+            </code>
+          </pre>
+          <p> This has been some sample text to get the creative juices flowing for CodeNapkin a long-term website project. Don't expect the real website to be like this. :P</p>
+        </div>
+      </div>  
     </div>
   </div>
-</nav>
-  
-  <div class="container">
-    <div class="jumbotron">
-      <h1>Ironbizmark</h1>
-      <p><em> (PenAndPaperCode) </em> <p>
-        <p>A Programmer. This is their site.</p>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h3> Games </h3>
-          <p>I have made a lot of games in the past in many different languages. I think games are pretty fun. Check out some of my earliest games <a href = "http://scratch.mit.edu/users/Ironbizmark">here</a> and some of my later works on <a href = "http://bithexagon.com">bithexagon.com</a></p>
-        </div>
-        <div class="col-md-4">
-          <h3> About </h3>
-          <p>United States Citizen. 9th Grader. Programmer. Planeswalker. <strong>Proficient in: </strong> HTML, PHP, CSS, MySQL, Java, JavaScript, Scratch, English</p>
-        </div>
-        <div class="col-md-4">
-          <h3> Fun Stuff </h3>
-          <p>Well, I guess I want a small column just to talk a little. I like programming, but you know that. I also enjoy reading and writing, I have treid (and failed) on multiple occasions to write a novel. I really like cats and I want to get one as soon as possible. In my opinion Mustard Is Life. Well, maybe not really.</p>
-        </div>
-        <div class="clearfix visible-lg"></div>
-      </div>
-      <div class = "row">
-        <div class = "col-md-12">
-          <h3> Explore CodeNapkin Today </h3>
-          <p><strong>Bootstrap and this Site</strong> Why did I make this site? Well, it is because of my other project CodeNapkin. That site sparked an intrest of mine in gitHub and caused me to make a site on this page. <code>System.out.println("Oh Well...");</code> It proabaly took way to long and I should be writing an english essay right now...</p>
-
-          <pre>
-            <code>
-              //Java Code
-
-              System.out.println("Happy now?");
-
-              for(int i = 0; i < 100; i++) {
-              System.out.println (i + " banana");
-            }
-          </code>
-        </pre>
-        <p> This has been some sample text to get the creative juices flowing for CodeNapkin a long-term website project. Don't expect the real website to be like this. :P</p>
-      </div>
-    </div>
-  </div>
-  <footer class="footer">
-    <div class="container">
-      <div class = "row">
-        <div class = "col-md-12">
-          <p class = "text-muted">Copyright 2015 Ironbizmark</p>
-        </div>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
