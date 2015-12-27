@@ -30,6 +30,7 @@ var dimensions = [];
 var counter;
 var blinkCnt;
 var musicOn = true;
+var score;
 
 function startGame() {
 	boxes = [];
@@ -46,7 +47,7 @@ function startGame() {
 	};
 	blinkCnt = 100;
 	console.log("INIT");
-
+    score = 0;
 	counter = 50;
 	// dimensions
 	dimensions.push({
@@ -93,11 +94,14 @@ function startGame() {
 		height: 20
 	});
 	
-	update();
+	gameState();
 }
 
 function menuState() {
 	console.log("Menu!");
+
+
+
 
 
 	ctx.fillStyle = "black";
@@ -111,11 +115,15 @@ function menuState() {
 	ctx.font = "15px Comfortaa";
 	ctx.fillText("Use WASD to move your character", width / 2, height / 1.75);
 	ctx.fillText("Press M to mute/play music", width / 2, height / 1.65);
-	
-
 	ctx.fillText("Made by Ironbizmark", width / 2, height / 1.1);
 
 
+    
+    if(score != null) {
+        ctx.textAlign = "left";
+        ctx.font = "15px Comfortaa";
+        ctx.fillText("Last Score: " + score, 10, 20);
+    }
 
 
 	if(keys[32]) {
@@ -134,8 +142,6 @@ function toggleMusic() {
 		musicOn = true;
 	}
 }
-
-
 
 function checkKeys() {
 	if (keys[87] || keys[32]) {
@@ -163,7 +169,7 @@ function checkKeys() {
 }
 
 
-function update() {
+function gameState() {
     // check keys
 
     console.log("PLAY!!");
@@ -239,6 +245,7 @@ function update() {
     		width: 80,
     		height: 20
     	});
+        score++;
     	counter = 50;
     } else {
     	counter--;
@@ -257,12 +264,15 @@ function update() {
 
     drawPlayer();
 
+    ctx.font = "15px Comfortaa";
+    ctx.fillText(score, 10, 20);
+
     //Let's loop it!
 
     if(player.y > height) {
     	menuState();
     } else {
-    	requestAnimationFrame(update);
+    	requestAnimationFrame(gameState);
     }
 }
 
